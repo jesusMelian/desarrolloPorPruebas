@@ -21,4 +21,10 @@ public class pruebaContador {
     public void instanciarContadorSinContenido(){
         contador con=new contador();
     }
+
+    @Test
+    public void comprobarIncrementar(){
+        contador con=new contador();
+        con.incrementar();
+    }
 }
