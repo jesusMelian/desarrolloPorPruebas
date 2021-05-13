@@ -35,4 +35,8 @@ class contador{
         }
         return this.valorActual;
     }
+
+    public int getValorActualContador(){
+        return this.valorActual;
+    }
 }
