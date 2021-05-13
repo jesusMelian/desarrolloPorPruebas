@@ -41,6 +41,6 @@ public class pruebaContador {
     public void getValorActualContador(){
         contador con=new contador(9,2,12);
         int esperado=con.getValorActualContador();
-        assertEquals(11, esperado);
+        assertEquals(9, esperado);
     }
 }
