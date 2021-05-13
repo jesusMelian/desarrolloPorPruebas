@@ -32,7 +32,7 @@ public class pruebaContador {
 
     @Test
     public void comprobarValorLimiteVuelveAlInicial(){
-        contador con=new contador(9,2,10);
+        contador con=new contador(9,2,12);
         int esperado=con.incrementar();
         assertEquals(11, esperado);
     }
