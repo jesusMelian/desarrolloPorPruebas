@@ -16,5 +16,6 @@ class contador{
         this.valorIni=valorIni;
         this.incremento=incremento;
         this.valorMax=valorMax;
+
     }
 }
