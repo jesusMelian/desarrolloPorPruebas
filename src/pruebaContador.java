@@ -15,4 +15,10 @@ public class pruebaContador {
         //ESTO SI FUNCIONA
     
     contador cont=new contador(1,1,10);
+    
+
+    @Test 
+    public void instanciarContadorSinContenido(){
+        contador con=new contador();
+    }
 }
