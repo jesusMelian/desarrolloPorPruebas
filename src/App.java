@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        
     }
 }
 
@@ -28,7 +27,12 @@ class contador{
         this.valorActual=valorIni;
     }
 
-    public void incrementar(){
-        this.valorActual=valorActual+this.incremento;
+    public int incrementar(){
+        this.valorActual=this.valorActual+this.incremento;
+
+        if(this.valorActual>this.valorMax){
+            this.valorActual=this.valorIni;
+        }
+        return this.valorActual;
     }
 }

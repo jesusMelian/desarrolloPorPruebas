@@ -1,3 +1,5 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.Test;
 
 public class pruebaContador {
@@ -28,7 +30,10 @@ public class pruebaContador {
         con.incrementar();
     }
 
+    @Test
     public void comprobarValorLimiteVuelveAlInicial(){
-        contador con=new contador(9,2,10);
+        contador con=new contador(9,2,12);
+        int esperado=con.incrementar();
+        assertEquals(11, esperado);
     }
 }
