@@ -18,14 +18,17 @@ class contador{
         this.incremento=1;
         //asigno 10 por defecto
         this.valorMax=10;
+        this.valorActual=valorIni;
     }
 
     public contador(int valorIni, int incremento, int valorMax){
         this.valorIni=valorIni;
         this.incremento=incremento;
         this.valorMax=valorMax;
-
+        this.valorActual=valorIni;
     }
 
-    
+    public void incrementar(){
+        this.valorActual=valorActual+this.incremento;
+    }
 }

@@ -24,7 +24,11 @@ public class pruebaContador {
 
     @Test
     public void comprobarIncrementar(){
-        contador con=new contador();
+        contador con=new contador(2,2,10);
         con.incrementar();
+    }
+
+    public void comprobarValorLimiteVuelveAlInicial(){
+        contador con=new contador(9,2,10);
     }
 }
