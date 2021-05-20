@@ -43,4 +43,11 @@ public class pruebaContador {
         int esperado=con.getValorActualContador();
         assertEquals(9, esperado);
     }
+
+    @Test
+    public void comprobarResetContador(){
+        contador con=new contador(9,2,12);
+        int esperado=con.resetValorContador();
+        assertEquals(2, esperado);
+    }
 }
