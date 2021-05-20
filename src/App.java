@@ -36,11 +36,11 @@ class contador{
         return this.valorActual;
     }
 
-    public int getValorActualContador(){
-        return this.incremento;
+    public int getValorActual(){
+        return this.valorActual;
     }
-    public int resetValorContador(){
-        this.incremento=1;
-        return this.incremento;
+    public int resetValorActual(){
+        this.valorActual=0;
+        return this.valorActual;
     }
 }

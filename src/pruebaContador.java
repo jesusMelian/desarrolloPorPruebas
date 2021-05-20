@@ -38,16 +38,16 @@ public class pruebaContador {
     }
 
     @Test
-    public void getValorActualContador(){
+    public void getValorActual(){
         contador con=new contador(9,2,12);
-        int esperado=con.getValorActualContador();
+        int esperado=con.getValorActual();
         assertEquals(9, esperado);
     }
 
     @Test
     public void comprobarResetContador(){
         contador con=new contador(9,2,12);
-        int esperado=con.resetValorContador();
-        assertEquals(1, esperado);
+        int esperado=con.resetValorActual();
+        assertEquals(0, esperado);
     }
 }
