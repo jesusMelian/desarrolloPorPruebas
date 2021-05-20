@@ -8,7 +8,7 @@ public class App {
 
 class contador{
     final private int valorIni;
-    final private int incremento;
+    private int incremento;
     final private int valorMax;
     private int valorActual;
 
@@ -37,6 +37,10 @@ class contador{
     }
 
     public int getValorActualContador(){
-        return this.valorActual;
+        return this.incremento;
+    }
+    public int resetValorContador(){
+        this.incremento=1;
+        return this.incremento;
     }
 }
