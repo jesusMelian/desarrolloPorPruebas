@@ -48,6 +48,6 @@ public class pruebaContador {
     public void comprobarResetContador(){
         contador con=new contador(9,2,12);
         int esperado=con.resetValorContador();
-        assertEquals(2, esperado);
+        assertEquals(1, esperado);
     }
 }
